@@ -21,6 +21,7 @@ spec:
       hostNetwork: true
       containers:
       - image: gluster/gluster-centos:gluster3u13_centos7
+        command : ["/usr/sbin/init"]
         imagePullPolicy: IfNotPresent
         name: glusterfs
         volumeMounts:
